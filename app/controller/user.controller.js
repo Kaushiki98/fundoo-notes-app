@@ -11,7 +11,7 @@
 
 const { validationResult } = require('express-validator');
 const userService = require('../services/user.service');
-
+const logger = require('../utility/logger')
 /**
 *@description : To handel regester of new user
 *@param       : req (request from client)
@@ -26,7 +26,6 @@ class userController {
       email: req.body.email,
       password: req.body.password,
     };
-    console.log("firstname :: " + user.firstName);
     var errors = validationResult(req);
 
     if (!errors.isEmpty()) {
@@ -37,7 +36,7 @@ class userController {
     else {
       userService.createUser(req, res, (err, result) => {
         if (err) {
-          console.log(err);
+          logger.error("Some error occured");
           return res.status(500).send({
             message: err
           })
