@@ -13,6 +13,7 @@
 const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
 const Joi = require('joi');
+const { body } = require('express-validator');
 
 //create instance of schema
 const mongoSchema = mongoose.Schema;
@@ -51,13 +52,13 @@ const validation = Joi.object({
   password: Joi.string().min(5).required()
 })
 
-/**
-*@description : To To find the registered user in database if not registerd 
-*               then to register new user to the database.
-*@param       : body (request from client)
-*@param       : callback (response from server)
-**/
 class user {
+
+  /**
+  *@description : To register new user to the database.
+  *@param       : body (request from client)
+  *@param       : callback (response from server)
+  **/
   createUser = (req, res, callback) => {
     const newUser = new dbUserModel({
       firstName: req.body.firstName,
@@ -75,5 +76,16 @@ class user {
         res.send(err)
       })
   }
+
+  /**
+  *@description : To login new user into the database.
+  *@param       : body (request from client)
+  *@param       : callback (response from server)
+  **/
+  loginUser = (userLogin, callback) => {
+    console.log({ email:userLogin.email  })
+    dbUserModel.find({email:userLogin.email}, callback )
+  };
 }
+
 module.exports = new user()

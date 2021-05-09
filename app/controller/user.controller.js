@@ -9,17 +9,28 @@
  * 
  *************************************************************************************/
 
+const { response } = require('express');
 const { validationResult } = require('express-validator');
 const userService = require('../services/user.service');
 const logger = require('../utility/logger')
-/**
-*@description : To handel regester of new user
-*@param       : req (request from client)
-*@param       : res (response from server)
-**/
+var jwt = require('jsonwebtoken');
+const Joi = require('joi');
+const bcrypt = require('bcrypt');
+const ACCESS_JWT_SECRET = "kasaks"
+
+const LoginValidation = Joi.object().keys({
+  email: Joi.string().required(),
+  password: Joi.string().required()
+})
 
 class userController {
-  createuser = (req, res) => {
+
+  /**
+  *@description : To handle regester of new user
+  *@param       : req (request from client)
+  *@param       : res (response from server)
+  **/
+  createUser = (req, res) => {
     const user = {
       firstName: req.body.firstName,
       lastName: req.body.lastName,
@@ -48,6 +59,50 @@ class userController {
           });
         }
       });
+    }
+  }
+
+  /**
+  *@description : To handel login details of user
+  *@param       : req (request from client)
+  *@param       : res (response from server)
+  **/
+  loginUser = (req, res) => {
+    const userLogin = {
+      email: req.body.email,
+      password: req.body.password,
+      
+    };
+    console.log(userLogin.password);
+    console.log(userLogin.email);
+
+    var error = validationResult(req);
+    const validation = LoginValidation.validate(userLogin);
+    if (validation.error) {
+      response.success = false;
+      response.error = error;
+      res.status(400).send(response)
+    } else {
+      userService.loginUser(userLogin, (err, result) => {
+        if (err) {          
+          logger.err("Error is occuring while login")
+          res.status(500).send({
+            message: err
+          })
+        } else {
+          bcrypt.compare(userLogin.password, result[0].password, (err, data) => {
+            if (data) {
+              const token = jwt.sign({email: result.email, id: result.id}, ACCESS_JWT_SECRET) 
+              result.token = token;              
+              logger.info("login success!")
+              res.status(200).send({ token: result.token, message: "success" })
+            }
+            else {
+              res.status(500).send({ message: "invalid" })
+            }
+          })
+        }
+      })
     }
   }
 }
