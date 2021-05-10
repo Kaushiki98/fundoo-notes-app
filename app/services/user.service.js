@@ -27,10 +27,13 @@ class UserServices {
 
   loginUser = (userLogin, callback) => {
     console.log(JSON.stringify(userLogin.email));
-    userModel.loginUser(userLogin, callback )//=> {
-   //   err ? callback(err) : callback(result)
-  //  })
+    userModel.loginUser(userLogin, callback)
   }
+
+  forgotPassword = (userLogin, callback) => {
+    userModel.loginUser(userLogin,callback)
+  }
+
 }
 
 module.exports = new UserServices()

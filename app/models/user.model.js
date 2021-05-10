@@ -35,6 +35,10 @@ const userSchema = new mongoSchema({
   password: {
     type: String,
     required: true
+  },
+  resetLink: {
+    data: String,
+    default: ''
   }
 });
 
@@ -83,8 +87,11 @@ class user {
   *@param       : callback (response from server)
   **/
   loginUser = (userLogin, callback) => {
-    console.log({ email:userLogin.email  })
-    dbUserModel.find({email:userLogin.email}, callback )
+    dbUserModel.find({ email: userLogin.email }, callback)
+  };
+
+  forgotPassword = (userLogin, callback) => {
+    dbUserModel.find({ email: userLogin.email }, callback)
   };
 }
 

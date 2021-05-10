@@ -16,7 +16,8 @@ const logger = require('../utility/logger')
 var jwt = require('jsonwebtoken');
 const Joi = require('joi');
 const bcrypt = require('bcrypt');
-const ACCESS_JWT_SECRET = "kasaks"
+const { use } = require('../routes/user.route');
+const nodeMailer = require('nodemailer')
 
 const LoginValidation = Joi.object().keys({
   email: Joi.string().required(),
@@ -71,11 +72,7 @@ class userController {
     const userLogin = {
       email: req.body.email,
       password: req.body.password,
-      
     };
-    console.log(userLogin.password);
-    console.log(userLogin.email);
-
     var error = validationResult(req);
     const validation = LoginValidation.validate(userLogin);
     if (validation.error) {
@@ -84,7 +81,7 @@ class userController {
       res.status(400).send(response)
     } else {
       userService.loginUser(userLogin, (err, result) => {
-        if (err) {          
+        if (err) {
           logger.err("Error is occuring while login")
           res.status(500).send({
             message: err
@@ -92,8 +89,8 @@ class userController {
         } else {
           bcrypt.compare(userLogin.password, result[0].password, (err, data) => {
             if (data) {
-              const token = jwt.sign({email: result.email, id: result.id}, ACCESS_JWT_SECRET) 
-              result.token = token;              
+              const token = jwt.sign({ email: result.email, id: result.id }, process.env.ACCESS_JWT_ACTIVATE)
+              result.token = token;
               logger.info("login success!")
               res.status(200).send({ token: result.token, message: "success" })
             }
@@ -105,5 +102,54 @@ class userController {
       })
     }
   }
+
+  /**
+  *@description : To handel forgot password of registered user
+  *@param       : req (request from client)
+  *@param       : res (response from server)
+  **/
+  forgotPassword = (req, res) => {
+    const userLogin = {
+      email: req.body.email
+    }
+    userService.forgotPassword(userLogin, (error, result) => {
+      if (!result) {
+        logger.error("Some error occurred while logging in"),
+          res.status(500).send({ message: "error" })
+      } else {
+        const token = jwt.sign({ email: result.email, id: result.id }, process.env.ACCESS_JWT_ACTIVATE)
+        result.token = token;
+        console.log("token:", result.token)
+        res.send({ message: "ok" })
+
+        let transporter = nodeMailer.createTransport({
+          service: 'gmail',
+          auth: {
+            user: 'kaushikiarasavilli@gmail.com',
+            pass: 'junnu@98'
+          },
+          tls: {
+            rejectUnauthorized: false
+          }
+        });
+
+        var mailOptions = {
+          from: 'kaushikiarasavilli@gmail.com',
+          to: 'kaushiki.ak88@gmail.com',
+          subject: 'Sending Email using Node.js',
+          text: `Hello, this is JSONWebToke : ${result.token} to reset password . Go to ${'http://localhost:3000'}`
+        };
+
+        transporter.sendMail(mailOptions, function (error, info) {
+          if (error) {
+            console.log(error);
+          } else {
+            console.log('Email sent: ' + info.response);
+          }
+        });
+      }
+    })
+  }
 }
+
 module.exports = new userController()

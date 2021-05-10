@@ -3,6 +3,11 @@ const express = require('express')
 // create express app
 const app = express();
 
+require("dotenv").config();
+
+let port = process.env.PORT;
+let host = process.env.HOST;
+
 // parse requedst of content-type application
 app.use(express.urlencoded({ extended: true }))
 
@@ -33,6 +38,6 @@ app.get('/', (req, res) => {
 });
 
 // listen for requests
-app.listen(3000,  () => {
-  console.log("Server is listening on port 3000");
+app.listen(port, host, () => {
+  console.log(`Server is listening ${host}: ${port}`);
 });
