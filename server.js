@@ -1,12 +1,13 @@
-const express = require('express')
-
-// create express app
-const app = express();
-
+const express = require('express');
+const swaggerUI = require('swagger-ui-express');
+const logger = require('./app/logger/user.logger');
+const swaggerJSDoc = require('./app/swagger.json')
 require("dotenv").config();
 
 let port = process.env.PORT;
-let host = process.env.HOST;
+
+// create express app
+const app = express();
 
 // parse requedst of content-type application
 app.use(express.urlencoded({ extended: true }))
@@ -24,20 +25,22 @@ mongoose.Promise = global.Promise;
 mongoose.connect(dbConfig.url, {
   useNewUrlParser: true
 }).then(() => {
-  console.log("Successfully connected to the database");
+  logger.info("Successfully connected to the database");
 }).catch(err => {
-  console.log('could not connect to the database. Exiting now...', err);
+  logger.error('could not connect to the database. Exiting now...', err);
   process.exit();
 })
 
 app.use(require('./app/routes/user.route'));
 
+app.use("/swagger", swaggerUI.serve, swaggerUI.setup(swaggerJSDoc))
+
 //define a simple route
-app.get('/', (req, res) => {
+app.get('/', (res) => {
   res.json({"Message" : "Welcome to Fundoo Notes"})
 });
 
 // listen for requests
-app.listen(port, host, () => {
-  console.log(`Server is listening ${host}: ${port}`);
+app.listen(port, () => {
+  logger.info(`Server is listening localhost: ${port}`);
 });

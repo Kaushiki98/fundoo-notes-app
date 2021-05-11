@@ -12,10 +12,13 @@ var express = require('express');
 var router = express.Router();
 const user = require('../controller/user.controller')
 
-router.post("/user", user.createUser);
+// post method to create new user
+router.post("/userRegistration", user.createUser);
 
-router.post("/login", user.loginUser);
+//post method to login user
+router.post("/userLogin", user.loginUser);
 
+//put method to reset password of user
 router.put("/forgotPassword", user.forgotPassword);
 
 module.exports = router ;
