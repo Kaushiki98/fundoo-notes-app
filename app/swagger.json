@@ -1,17 +1,17 @@
 {
   "swagger": "2.0",
   "info": {
-    "description": "This is Fundoo Api",
+    "description": "WELCOME TO FUNDOO NOTES API",
     "version": "1.0.0",
-    "title": "FUNDOO API",
+    "title": "FUNDOO NOTES",
     "email": "sampleEmail",
     "host": "localhost:3000",
     "basePath": "/"
   },
   "tags": [
     {
-      "name": "Fundoo",
-      "description": "Everything about Fundoo API"
+      "name": "FUNDOO NOTES",
+      "description": "Everything about Fundoo Notes"
     }
   ],
   "schemes": [
@@ -27,10 +27,9 @@
     "/userRegistration": {
       "post": {
         "tags": [
-          "Fundoo user registration"
+          "FUNDOO USER REGISTRATION"
         ],
-        "description": "create a new user",
-        "summary": "create a user",
+        "description": "Create a new user",
         "consumes": [
           "application/json"
         ],
@@ -68,6 +67,85 @@
           },
           "400": {
             "description": "User cannot be empty"
+          }
+        }
+      }
+    },
+  "/userLogin": {
+      "post": {
+        "tags": [
+          "FUNDOO LOGIN USER"
+        ],
+        "description": "create a user login",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": " User Login ",
+            "in": "body",
+            "type": "string",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "email": {
+                  "type": "string"
+                },
+                "password": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "User login successful"
+          },
+          "400": {
+            "description": "user login unsuccessful"
+          }
+        }
+      }
+    },
+    "/forgotPassword": {
+      "put": {
+        "tags": [
+          "FUNDOO RESET PASSWORD"
+        ],
+        "description": "Send token for forgot password endpoint",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": " forgot password ",
+            "in": "body",
+            "type": "string",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "email": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "email sent sucessfully"
+          },
+          "400": {
+            "description": "email verifcation uncessfull"
           }
         }
       }

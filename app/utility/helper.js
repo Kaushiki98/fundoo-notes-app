@@ -19,8 +19,6 @@ require('dotenv').config();
  * @module        : Useing of JOI
 ************************************************************************************/
 const LoginValidation = Joi.object().keys({
-  firstName: Joi.string().required(),
-  lastName: Joi.string().required(),
   email: Joi.string().required(),
   password: Joi.string().required()
 })

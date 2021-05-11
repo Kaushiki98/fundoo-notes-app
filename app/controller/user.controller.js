@@ -13,7 +13,7 @@ const { response } = require('express');
 const { validationResult } = require('express-validator');
 const userService = require('../services/user.service');
 const logger = require('../logger/user.logger')
-const { LoginValidation, createToken } = require('../utility/helper')
+const {  LoginValidation, createToken } = require('../utility/helper')
 
 class userController {
 
@@ -56,13 +56,13 @@ class userController {
   ***********************************************************************************/
   loginUser = (req, res) => {
     const userLogin = {
-      firstName: req.body.firstName,
-      lastName: req.body.lastName,
       email: req.body.email,
       password: req.body.password,
     };
     var error = validationResult(req);
     const validation = LoginValidation.validate(userLogin);
+        console.log("err",validation)
+
     if (validation.error) {
       response.success = false;
       response.error = error;
