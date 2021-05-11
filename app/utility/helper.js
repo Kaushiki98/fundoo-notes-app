@@ -13,6 +13,8 @@ const Joi = require('joi');
 const JWT = require('jsonwebtoken');
 const nodeMailer = require('nodemailer');
 require('dotenv').config();
+const EJS = require('ejs')
+const logger = require('../logger/user.logger');
 
 /***********************************************************************************
  * @description   : Validating login credentials getting from the user 
@@ -29,7 +31,7 @@ const LoginValidation = Joi.object().keys({
  * @module        : using JWT
 **********************************************************************************/
 const createToken = (result) => {
-  const token = JWT.sign({ email: result.email, id: result.id }, process.env.ACCESS_JWT_ACTIVATE, {expiresIn: '1h'});
+  const token = JWT.sign({ email: result.email, id: result.id }, process.env.ACCESS_JWT_ACTIVATE, { expiresIn: '1h' });
   result.token = token;
 }
 
@@ -47,18 +49,23 @@ const sendEmail = () => {
     },
   });
 
-  var mailOptions = {
-    from: process.env.EMAILFROM,
-    to: process.env.EMAILTO,
-    subject: 'Sending Email using Node.js',
-    text: `Token to reset password . Go to ${'http://localhost:3000/forgotPassword/'}`
-  };
-
-  transporter.sendMail(mailOptions, (error, info) => {
-    if (error) {
-      console.log(error);
+  EJS.renderFile('sendMail', (err, result) => {
+    if (err) {
+      logger.error("error")
     } else {
-      console.log('Email sent: ' + info.response);
+      var mailLink = {
+        from: process.env.EMAILFROM,
+        to: process.env.EMAILTO,
+        subject: 'Sending Email using Node.js',
+        html: `${result.token}<a href = "${'http://localhost:3000/resetPassword/'}${createToken(result)}">`
+      };
+      transporter.sendMail(mailLink, (error, info) => {
+        if (error) {
+          logger.error(error);
+        } else {
+          logger.info('Email sent: ' + info.response);
+        }
+      })
     }
   })
 }
