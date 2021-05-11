@@ -940,3 +940,5 @@
 {"message":"Successfully connected to the database","level":"info","timestamp":"2021-05-11T11:42:05.734Z"}
 {"message":"Server is listening localhost: 3000","level":"info","timestamp":"2021-05-11T11:46:17.865Z"}
 {"message":"Successfully connected to the database","level":"info","timestamp":"2021-05-11T11:46:17.998Z"}
+{"message":"Server is listening localhost: 3000","level":"info","timestamp":"2021-05-11T11:46:37.119Z"}
+{"message":"Successfully connected to the database","level":"info","timestamp":"2021-05-11T11:46:37.173Z"}
