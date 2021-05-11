@@ -974,3 +974,5 @@
 {"message":"error","level":"error","timestamp":"2021-05-11T15:02:30.223Z"}
 {"message":"Server is listening localhost: 3000","level":"info","timestamp":"2021-05-11T15:03:21.938Z"}
 {"message":"Successfully connected to the database","level":"info","timestamp":"2021-05-11T15:03:21.997Z"}
+{"message":"Server is listening localhost: 3000","level":"info","timestamp":"2021-05-11T15:06:56.540Z"}
+{"message":"Successfully connected to the database","level":"info","timestamp":"2021-05-11T15:06:56.595Z"}
