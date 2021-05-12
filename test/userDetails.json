@@ -1,29 +1,38 @@
   {
     "user": {
-      "userRegistration": {
-        "firstName": "kaushu",
-        "lastName": "asf",
+      "createUser": {
+        "firstName": "Kaushiki",
+        "lastName": "Kaush",
         "email": "kaushiki.ak88@gmail.com",
         "password": "Hello123"
       },
-      "InvalideUserRegistration": {
-        "firstName": "kaushu",
-        "email": "kaushiki@gmail.com",
+      "InvalideDetails": {
+        "firstName": "Kaushiki",
+        "lastName": "sh",
+        "email": "sonigmail123cocom",
+        "password": "abcd23"
+      },
+      "EmailMissing": {
+        "firstName": "kaushiki",
+        "lastName": "a",
         "password": "Hello123"
       },
-      "login": {
+      "loginUser": {
         "email": "kaushiki.ak88@gmail.com",
         "password": "Hello123"
       },
-      "InvalideLogin": {
-        "email": "kaushiki234@gmail.com",
+      "InvalideLoginDetails": {
+        "email": ".ak88abcdgmail.com",
         "password": "kaushu123"
       },
-      "forgotPassword": {
+      "MissingEmail": {
+        "password": "kaushu123"
+      },
+      "ValidEmail": {
         "email": "kaushiki.ak88@gmail.com"
       },
-      "forgotPasswordInvalideEmail": {
-        "email": "abc@gmail.com"
+      "PasswordInvalideEmail": {
+        "email": "abcsdfgmailcom"
       }
     }
   }

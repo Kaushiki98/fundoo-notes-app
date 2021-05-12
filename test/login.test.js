@@ -1,7 +1,7 @@
 let chai = require('chai');
 let chaiHttp = require('chai-http');
 let server = require('../server');
-const loginDetails = require('./userDetails.json');
+const userDetails = require('./userDetails.json');
 
 chai.should();
 
@@ -9,26 +9,35 @@ chai.use(chaiHttp);
 
 describe('User login', () => {
   it('GivenLoginDetails_whenValid_shouldBeAbleToLogin', (done) => {
-    const loginInfo = loginDetails.user.login;
-    chai
-      .request(server)
+    let userInfo = userDetails.user.loginUser;
+    chai.request(server)
       .post('/userLogin')
-      .send(loginInfo)
+      .send(userInfo)
       .end((err, res) => {
         res.should.have.status(200);
         done();
       });
   });
+
   it('GivenLoginDetails_whenInValid_shouldnotBeAbleToLogin', (done) => {
-    const loginInfo = loginDetails.user.InvalideLogin;
-    chai
-      .request(server)
+    let userInfo = userDetails.user.InvalideLoginDetails;
+    chai.request(server)
       .post('/userLogin')
-      .send(loginInfo)
+      .send(userInfo)
       .end((err, res) => {
-        res.should.have.status(400);
+        res.should.have.status(200);
         done();
       });
   });
-
+  
+  it('GivenLoginDetails_whenInValid_shouldnotBeAbleToLogin', (done) => {
+    let userInfo = userDetails.user.MissingEmail;
+    chai.request(server)
+      .post('/userLogin')
+      .send(userInfo)
+      .end((err, res) => {
+        res.should.have.status(200);
+        done();
+      });
+  });
 });

@@ -13,7 +13,7 @@ const { response } = require('express');
 const { validationResult } = require('express-validator');
 const userService = require('../services/user.service');
 const logger = require('../logger/user.logger')
-const {  LoginValidation, createToken } = require('../utility/helper')
+const { RegisterValidation, LoginValidation, createToken } = require('../utility/helper')
 
 class userController {
 
@@ -23,24 +23,32 @@ class userController {
   *@param       : res (response from server)
   ***********************************************************************************/
   createUser = (req, res) => {
+    const userRegisteration = {
+      firstName: req.body.firstName,
+      lastName: req.body.lastName,
+      email: req.body.email,
+      password: req.body.password,
+    };
+    const validation = RegisterValidation.validate(userRegisteration);
 
-    var errors = validationResult(req);
-
-    if (!errors.isEmpty()) {
-      response.success = false;
-      response.error = errors;
-      return res.status(422).send(response);
+    if (validation.error) {
+      return res.send({ 
+        status: 400,
+        message: "Please Enter Valid Details" });
+      
     }
     else {
       userService.createUser(req, res, (err, result) => {
         if (err) {
           logger.error("Some error occured while registering user");
-          return res.status(500).send({
-            message: err
+          return res.send({
+            status: 500,
+            message: "error"
           })
         }
         else {
-          return res.status(200).send({
+          return res.send({
+            status: 200,
             success: true,
             message: "User registered sucessfully"
           });
@@ -57,16 +65,14 @@ class userController {
   loginUser = (req, res) => {
     const userLogin = {
       email: req.body.email,
-      password: req.body.password,
+      password: req.body.password
     };
-    var error = validationResult(req);
     const validation = LoginValidation.validate(userLogin);
-        console.log("err",validation)
 
     if (validation.error) {
-      response.success = false;
-      response.error = error;
-      res.status(400).send(response)
+      return res.send({ 
+        status: 400,
+        message: "Please Enter Valid Details" });
     } else {
       userService.loginUser(req, res, userLogin)
     }

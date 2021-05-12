@@ -18,7 +18,7 @@ const mongoSchema = mongoose.Schema;
 const userSchema = new mongoSchema({
   firstName: { type: String, require: true },
   lastName: { type: String, require: true },
-  email: { type: String, unique: true, require: true },
+  email: { type: String, lowercase: true, unique: true, require: true },
   password: { type: String, required: true }
 }, { timestamps: true });
 
@@ -53,14 +53,14 @@ class user {
         })
       }
       else {
-        newUser.save()
-          .then((data) => {
-            console.log("Success");
-            res.send(data);
-          }).catch((err) => {
-            console.log(err);
-            res.send(err)
-          })
+        newUser.save( (err, data) => {
+          console.log("data",data)
+          if(data) {
+            return res.status(200).send ({ message: "User successfully registered" })
+          }else {
+            return res.status(500).send({ message: "Enter valid Details" })
+          }
+        })
       }
     })
   }

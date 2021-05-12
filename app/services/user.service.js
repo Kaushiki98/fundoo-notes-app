@@ -41,18 +41,18 @@ class UserServices {
   loginUser = (req, res, userLogin) => {
     userModel.loginUser(userLogin, (err, result) => {
       if (result) {
-        bcrypt.compare(userLogin.password, result.password, (err, data) => {
-          if (data) {
-            createToken(result);
+        bcrypt.compare(userLogin.password, result.password, (err, token) => {
+          if (token) {
+            createToken(token);
             logger.info("login success!")
-            res.status(200).send({ token: result.token, message: "success" })
+            res.send({status: 200, token: createToken(token), message: "Token created successfully " })
           }
           else {
-            res.status(500).send({ message: "Invalid Password" })
+            res.send({status: 500, message: "Invalid Details" })
           }
         })
       } else {
-        res.status(400).send({ message: "Enter valid Password" })
+        res.send({status: 400, message: "Enter valid Details" })
       }
     })
   }
@@ -63,16 +63,14 @@ class UserServices {
   *@param       : res (response from server)
   ***********************************************************************************/
   forgotPassword = (req, res, userLogin) => {
-    userModel.loginUser(userLogin, (err, result) => {
-      console.log("res", result)
-      if (result) {
-        createToken(result);
-        console.log(result.token)
-        sendEmail(result.token)
-        res.status(200).send({ message: "Mail successfully sent" })
+    userModel.loginUser(userLogin, (err, token) => {
+      if (token) {
+        createToken(token);
+        sendEmail(createToken(token))
+        res.send({status: 200, message: "User Registration Token sent successfully" })
       } else {
         logger.error("Email doesnot exist")
-        res.status(400).send({ message: "Enter valid Email" })
+        res.send({status: 400, message: "Enter valid Email and Password" })
       }
     })
   }

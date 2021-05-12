@@ -18,3 +18,94 @@
 {"message":"error","level":"error","timestamp":"2021-05-12T04:21:15.607Z"}
 {"message":"error","level":"error","timestamp":"2021-05-12T04:23:42.955Z"}
 {"message":"Email doesnot exist","level":"error","timestamp":"2021-05-12T04:23:42.984Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-12T04:50:30.166Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-12T04:50:30.217Z"}
+{"message":"error","level":"error","timestamp":"2021-05-12T04:57:45.720Z"}
+{"message":"error","level":"error","timestamp":"2021-05-12T05:15:40.223Z"}
+{"message":"error","level":"error","timestamp":"2021-05-12T05:17:59.989Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-12T05:22:03.172Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-12T05:22:03.227Z"}
+{"message":"error","level":"error","timestamp":"2021-05-12T06:18:11.613Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-12T06:18:11.643Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-12T11:31:55.798Z"}
+{"message":"error","level":"error","timestamp":"2021-05-12T11:35:56.561Z"}
+{"message":"error","level":"error","timestamp":"2021-05-12T11:35:59.096Z"}
+{"message":"error","level":"error","timestamp":"2021-05-12T11:39:31.483Z"}
+{"message":"error","level":"error","timestamp":"2021-05-12T11:49:49.557Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-12T11:49:49.578Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-12T11:50:50.665Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-12T11:50:50.688Z"}
+{"message":"error","level":"error","timestamp":"2021-05-12T11:59:21.123Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-12T11:59:21.144Z"}
+{"message":"error","level":"error","timestamp":"2021-05-12T12:02:30.875Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-12T12:02:30.894Z"}
+{"message":"error","level":"error","timestamp":"2021-05-12T12:05:04.339Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-12T12:05:04.360Z"}
+{"message":"error","level":"error","timestamp":"2021-05-12T12:07:40.945Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-12T12:07:40.964Z"}
+{"message":"error","level":"error","timestamp":"2021-05-12T12:09:19.197Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-12T12:09:19.217Z"}
+{"message":"error","level":"error","timestamp":"2021-05-12T12:09:49.151Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-12T12:09:49.172Z"}
+{"message":"error","level":"error","timestamp":"2021-05-12T12:12:25.360Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-12T12:12:25.390Z"}
+{"message":"error","level":"error","timestamp":"2021-05-12T12:12:53.377Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-12T12:12:53.396Z"}
+{"message":"error","level":"error","timestamp":"2021-05-12T12:14:06.795Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-12T12:14:06.815Z"}
+{"message":"error","level":"error","timestamp":"2021-05-12T12:15:40.945Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-12T12:15:40.967Z"}
+{"message":"error","level":"error","timestamp":"2021-05-12T12:16:35.668Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-12T12:16:35.693Z"}
+{"message":"error","level":"error","timestamp":"2021-05-12T12:21:48.277Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-12T12:21:48.296Z"}
+{"message":"error","level":"error","timestamp":"2021-05-12T12:22:04.191Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-12T12:22:04.213Z"}
+{"message":"error","level":"error","timestamp":"2021-05-12T12:24:28.656Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-12T12:24:28.676Z"}
+{"message":"error","level":"error","timestamp":"2021-05-12T13:07:56.886Z"}
+{"message":"error","level":"error","timestamp":"2021-05-12T13:28:25.264Z"}
+{"message":"error","level":"error","timestamp":"2021-05-12T13:29:59.886Z"}
+{"message":"error","level":"error","timestamp":"2021-05-12T13:29:59.887Z"}
+{"message":"error","level":"error","timestamp":"2021-05-12T13:30:16.191Z"}
+{"message":"error","level":"error","timestamp":"2021-05-12T13:30:16.326Z"}
+{"message":"error","level":"error","timestamp":"2021-05-12T13:32:27.474Z"}
+{"message":"error","level":"error","timestamp":"2021-05-12T13:33:17.020Z"}
+{"message":"error","level":"error","timestamp":"2021-05-12T13:35:50.992Z"}
+{"message":"error","level":"error","timestamp":"2021-05-12T13:36:54.065Z"}
+{"message":"error","level":"error","timestamp":"2021-05-12T13:37:20.029Z"}
+{"message":"error","level":"error","timestamp":"2021-05-12T13:37:43.160Z"}
+{"message":"error","level":"error","timestamp":"2021-05-12T13:38:04.711Z"}
+{"message":"error","level":"error","timestamp":"2021-05-12T13:44:23.087Z"}
+{"message":"error","level":"error","timestamp":"2021-05-12T13:47:27.403Z"}
+{"message":"error","level":"error","timestamp":"2021-05-12T13:48:05.779Z"}
+{"message":"error","level":"error","timestamp":"2021-05-12T13:48:17.895Z"}
+{"message":"error","level":"error","timestamp":"2021-05-12T14:17:57.532Z"}
+{"code":"EENVELOPE","command":"API","level":"error","timestamp":"2021-05-12T16:48:39.862Z"}
+{"code":"EENVELOPE","command":"API","level":"error","timestamp":"2021-05-12T17:13:33.774Z"}
+{"code":"EENVELOPE","command":"API","level":"error","timestamp":"2021-05-12T17:39:32.687Z"}
+{"code":"EENVELOPE","command":"API","level":"error","timestamp":"2021-05-12T17:42:30.312Z"}
+{"code":"EENVELOPE","command":"API","level":"error","timestamp":"2021-05-12T17:43:07.221Z"}
+{"code":"EENVELOPE","command":"API","level":"error","timestamp":"2021-05-12T17:44:39.618Z"}
+{"code":"EENVELOPE","command":"API","level":"error","timestamp":"2021-05-12T17:45:07.784Z"}
+{"code":"EENVELOPE","command":"API","level":"error","timestamp":"2021-05-12T17:46:33.224Z"}
+{"code":"EENVELOPE","command":"API","level":"error","timestamp":"2021-05-12T17:46:47.407Z"}
+{"code":"EENVELOPE","command":"API","level":"error","timestamp":"2021-05-12T17:47:24.145Z"}
+{"code":"EENVELOPE","command":"API","level":"error","timestamp":"2021-05-12T17:47:37.400Z"}
+{"code":"EENVELOPE","command":"API","level":"error","timestamp":"2021-05-12T17:48:09.458Z"}
+{"code":"EENVELOPE","command":"API","level":"error","timestamp":"2021-05-12T17:49:55.376Z"}
+{"code":"EENVELOPE","command":"API","level":"error","timestamp":"2021-05-12T17:51:51.234Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-12T18:11:24.505Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-12T18:11:24.531Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-12T18:27:57.039Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-12T18:29:16.719Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-12T18:29:54.465Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-12T18:31:46.563Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-12T18:31:46.582Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-12T18:31:46.607Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-12T18:38:39.755Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-12T18:39:57.916Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-12T18:41:01.756Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-12T18:46:51.755Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-12T18:46:51.774Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-12T18:46:51.783Z"}

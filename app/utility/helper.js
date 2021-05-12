@@ -16,13 +16,20 @@ require('dotenv').config();
 const EJS = require('ejs')
 const logger = require('../logger/user.logger');
 
+const RegisterValidation = Joi.object({
+  firstName: Joi.string().required().pattern(new RegExp('^[A-Z][a-z]{3,}$')),
+  lastName: Joi.string().required().pattern(new RegExp('^[A-Z][a-z]{3,}$')),
+  email: Joi.string().required().pattern(new RegExp('^[a-zA-Z0-9.+_-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$')),
+  password: Joi.string().required().pattern(new RegExp('^(?=.*[a-z])(?=.*?[0-9]).{5,}$')),
+});
+
 /***********************************************************************************
  * @description   : Validating login credentials getting from the user 
  * @module        : Useing of JOI
 ************************************************************************************/
 const LoginValidation = Joi.object().keys({
-  email: Joi.string().required(),
-  password: Joi.string().required()
+  email: Joi.string().required().pattern(new RegExp('^[a-zA-Z0-9.+_-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$')),
+  password: Joi.string().required().pattern(new RegExp('^(?=.*[a-z])(?=.*?[0-9]).{5,}$'))
 })
 
 /**********************************************************************************
@@ -31,8 +38,7 @@ const LoginValidation = Joi.object().keys({
  * @module        : using JWT
 **********************************************************************************/
 const createToken = (result) => {
-  const token = JWT.sign({ email: result.email, id: result.id }, process.env.ACCESS_JWT_ACTIVATE, { expiresIn: '1h' });
-  result.token = token;
+  return JWT.sign({ result }, process.env.ACCESS_JWT_ACTIVATE, { expiresIn: '1h' });
 }
 
 /**********************************************************************************
@@ -40,26 +46,26 @@ const createToken = (result) => {
  * @param         : sending mails from server 
  * @module        : nodemailer
 **********************************************************************************/
-const sendEmail = () => {
+const sendEmail = (token) => {
+
   let transporter = nodeMailer.createTransport({
     service: 'GMail',
     auth: {
-      user: process.env.EMAILFROM,
+      user: process.env.EMAIL,
       pass: process.env.PASSWORD
     },
   });
-
-  EJS.renderFile('sendMail', (err, result) => {
-    if (err) {
+  EJS.renderFile('app/view/sendEmail.ejs', (err, result) => {
+    if (err) { 
       logger.error("error")
-    } else {
-      var mailLink = {
-        from: process.env.EMAILFROM,
-        to: process.env.EMAILTO,
-        subject: 'Sending Email using Node.js',
-        html: `${result.token}<a href = "${'http://localhost:3000/resetPassword/'}${createToken(result)}">`
+    } else {     
+      var mailOptions = { 
+        from: process.env.EMAIL,
+        to: process.env.EMAIL2,
+        subject: 'To Reset Password',
+        html: `${result} ${'http://localhost:3000/resetPassword/'}${createToken(token)}`
       };
-      transporter.sendMail(mailLink, (error, info) => {
+      transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
           logger.error(error);
         } else {
@@ -70,4 +76,4 @@ const sendEmail = () => {
   })
 }
 
-module.exports = { LoginValidation, createToken, sendEmail }
+module.exports = { RegisterValidation, LoginValidation, createToken, sendEmail }
