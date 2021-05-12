@@ -8,6 +8,8 @@
  * @since     : 24.04.2021
  * 
  *************************************************************************************/
+ require("dotenv").config();
+
 module.exports = {
-  url: 'mongodb://localhost:27017/fundoo-notes-app'
+  url: process.env.DB_URL
 }

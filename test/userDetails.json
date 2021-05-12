@@ -1,0 +1,29 @@
+  {
+    "user": {
+      "userRegistration": {
+        "firstName": "kaushu",
+        "lastName": "asf",
+        "email": "kaushiki.ak88@gmail.com",
+        "password": "Hello123"
+      },
+      "InvalideUserRegistration": {
+        "firstName": "kaushu",
+        "email": "kaushiki@gmail.com",
+        "password": "Hello123"
+      },
+      "login": {
+        "email": "kaushiki.ak88@gmail.com",
+        "password": "Hello123"
+      },
+      "InvalideLogin": {
+        "email": "kaushiki234@gmail.com",
+        "password": "kaushu123"
+      },
+      "forgotPassword": {
+        "email": "kaushiki.ak88@gmail.com"
+      },
+      "forgotPasswordInvalideEmail": {
+        "email": "abc@gmail.com"
+      }
+    }
+  }

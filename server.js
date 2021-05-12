@@ -9,6 +9,17 @@ let port = process.env.PORT;
 // create express app
 const app = express();
 
+var cache = {};
+
+app.post('/set', function(req, res) {
+  var query = req.query;
+  Object.keys(query).forEach(function(key) {
+    cache[key] = query[key];
+  });
+  res.status(200).end();
+});
+
+
 // parse requedst of content-type application
 app.use(express.urlencoded({ extended: true }))
 
@@ -44,3 +55,5 @@ app.get('/', (res) => {
 app.listen(port, () => {
   logger.info(`Server is listening localhost: ${port}`);
 });
+
+module.exports = app;

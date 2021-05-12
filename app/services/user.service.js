@@ -71,7 +71,7 @@ class UserServices {
         sendEmail(result.token)
         res.status(200).send({ message: "Mail successfully sent" })
       } else {
-        logger.err("Email doesnot exist")
+        logger.error("Email doesnot exist")
         res.status(400).send({ message: "Enter valid Email" })
       }
     })
