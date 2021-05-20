@@ -45,14 +45,14 @@ class UserServices {
           if (token) {
             createToken(token);
             logger.info("login success!")
-            res.send({status: 200, token: createToken(token), message: "Token created successfully " })
+            res.status(200).send({status: 200, token: createToken(token), message: "Token created successfully" })
           }
           else {
-            res.send({status: 500, message: "Invalid Details" })
+            res.status(500).send({status: 500, message: "Invalid Details" })
           }
         })
       } else {
-        res.send({status: 400, message: "Enter valid Details" })
+        res.status(400).send({status: 400, message: "Enter valid Details" })
       }
     })
   }
@@ -67,13 +67,14 @@ class UserServices {
       if (token) {
         createToken(token);
         sendEmail(createToken(token))
-        res.send({status: 200, message: "User Registration Token sent successfully" })
+        res.status(200).send({status: 200, message: "User Registration Token sent successfully" })
       } else {
         logger.error("Email doesnot exist")
-        res.send({status: 400, message: "Enter valid Email and Password" })
+        res.status(400).send({status: 400, message: "Enter valid Email and Password" })
       }
     })
   }
 }
+
 
 module.exports = new UserServices()

@@ -25,7 +25,7 @@ describe('User login', () => {
       .post('/userLogin')
       .send(userInfo)
       .end((err, res) => {
-        res.should.have.status(200);
+        res.should.have.status(400);
         done();
       });
   });
@@ -36,7 +36,7 @@ describe('User login', () => {
       .post('/userLogin')
       .send(userInfo)
       .end((err, res) => {
-        res.should.have.status(200);
+        res.should.have.status(400);
         done();
       });
   });

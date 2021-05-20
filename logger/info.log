@@ -2532,3 +2532,218 @@
 {"message":"Email doesnot exist","level":"error","timestamp":"2021-05-12T18:46:51.755Z"}
 {"message":"Email doesnot exist","level":"error","timestamp":"2021-05-12T18:46:51.774Z"}
 {"message":"Email doesnot exist","level":"error","timestamp":"2021-05-12T18:46:51.784Z"}
+{"message":"Server is listening localhost: 3000","level":"info","timestamp":"2021-05-13T04:17:37.868Z"}
+{"message":"Successfully connected to the database","level":"info","timestamp":"2021-05-13T04:17:37.969Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-13T04:17:38.038Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-13T04:17:38.056Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-13T04:17:38.071Z"}
+{"message":"Server is listening localhost: 3000","level":"info","timestamp":"2021-05-13T04:21:20.428Z"}
+{"message":"Successfully connected to the database","level":"info","timestamp":"2021-05-13T04:21:20.519Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-13T04:21:20.645Z"}
+{"message":"login success!","level":"info","timestamp":"2021-05-13T04:21:20.765Z"}
+{"message":"Email sent: 250 2.0.0 OK  1620879684 gm21sm2270177pjb.31 - gsmtp","level":"info","timestamp":"2021-05-13T04:21:24.690Z"}
+{"message":"Email sent: 250 2.0.0 OK  1620879684 q3sm5617004pjk.47 - gsmtp","level":"info","timestamp":"2021-05-13T04:21:24.789Z"}
+{"message":"Server is listening localhost: 3000","level":"info","timestamp":"2021-05-13T04:22:36.566Z"}
+{"message":"Successfully connected to the database","level":"info","timestamp":"2021-05-13T04:22:36.678Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-13T04:22:36.821Z"}
+{"message":"login success!","level":"info","timestamp":"2021-05-13T04:22:36.942Z"}
+{"message":"Email sent: 250 2.0.0 OK  1620879761 n8sm995911pff.167 - gsmtp","level":"info","timestamp":"2021-05-13T04:22:41.714Z"}
+{"message":"Email sent: 250 2.0.0 OK  1620879761 q18sm1020845pfj.131 - gsmtp","level":"info","timestamp":"2021-05-13T04:22:42.118Z"}
+{"message":"Server is listening localhost: 3000","level":"info","timestamp":"2021-05-13T04:25:01.625Z"}
+{"message":"Successfully connected to the database","level":"info","timestamp":"2021-05-13T04:25:01.716Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-13T04:25:01.859Z"}
+{"message":"login success!","level":"info","timestamp":"2021-05-13T04:25:01.980Z"}
+{"message":"Email sent: 250 2.0.0 OK  1620879906 u6sm1000615pfi.44 - gsmtp","level":"info","timestamp":"2021-05-13T04:25:07.280Z"}
+{"message":"Email sent: 250 2.0.0 OK  1620879912 a7sm6102869pjm.0 - gsmtp","level":"info","timestamp":"2021-05-13T04:25:12.982Z"}
+{"message":"Server is listening localhost: 3000","level":"info","timestamp":"2021-05-13T04:26:56.047Z"}
+{"message":"Successfully connected to the database","level":"info","timestamp":"2021-05-13T04:26:56.130Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-13T04:26:56.268Z"}
+{"message":"login success!","level":"info","timestamp":"2021-05-13T04:26:56.402Z"}
+{"message":"Email sent: 250 2.0.0 OK  1620880020 a12sm1094281pfg.102 - gsmtp","level":"info","timestamp":"2021-05-13T04:27:01.039Z"}
+{"message":"Email sent: 250 2.0.0 OK  1620880022 y3sm1065916pfl.153 - gsmtp","level":"info","timestamp":"2021-05-13T04:27:03.680Z"}
+{"message":"login success!","level":"info","timestamp":"2021-05-13T04:31:47.161Z"}
+{"message":"Email sent: 250 2.0.0 OK  1620880329 f14sm1127441pjq.50 - gsmtp","level":"info","timestamp":"2021-05-13T04:32:09.905Z"}
+{"message":"Server is listening localhost: 3000","level":"info","timestamp":"2021-05-13T05:00:36.199Z"}
+{"message":"Successfully connected to the database","level":"info","timestamp":"2021-05-13T05:00:36.255Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-13T05:00:36.316Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-13T05:00:36.340Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-13T05:00:36.353Z"}
+{"message":"Server is listening localhost: 3000","level":"info","timestamp":"2021-05-13T05:04:19.568Z"}
+{"message":"Successfully connected to the database","level":"info","timestamp":"2021-05-13T05:04:19.657Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-13T05:04:19.845Z"}
+{"message":"login success!","level":"info","timestamp":"2021-05-13T05:04:20.021Z"}
+{"message":"Email sent: 250 2.0.0 OK  1620882262 l67sm1189605pgl.18 - gsmtp","level":"info","timestamp":"2021-05-13T05:04:22.932Z"}
+{"message":"Email sent: 250 2.0.0 OK  1620882262 k14sm1175034pgl.2 - gsmtp","level":"info","timestamp":"2021-05-13T05:04:23.072Z"}
+{"message":"Server is listening localhost: 3000","level":"info","timestamp":"2021-05-13T05:05:40.676Z"}
+{"message":"Successfully connected to the database","level":"info","timestamp":"2021-05-13T05:05:40.772Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-13T05:05:40.926Z"}
+{"message":"login success!","level":"info","timestamp":"2021-05-13T05:05:41.045Z"}
+{"code":"EENVELOPE","command":"API","level":"error","timestamp":"2021-05-13T05:05:42.223Z"}
+{"code":"EENVELOPE","command":"API","level":"error","timestamp":"2021-05-13T05:05:42.227Z"}
+{"message":"Server is listening localhost: 3000","level":"info","timestamp":"2021-05-13T05:07:58.970Z"}
+{"message":"Successfully connected to the database","level":"info","timestamp":"2021-05-13T05:07:59.023Z"}
+{"message":"login success!","level":"info","timestamp":"2021-05-13T05:09:44.050Z"}
+{"code":"EENVELOPE","command":"API","level":"error","timestamp":"2021-05-13T05:09:51.693Z"}
+{"code":"EENVELOPE","command":"API","level":"error","timestamp":"2021-05-13T05:10:45.432Z"}
+{"code":"EENVELOPE","command":"API","level":"error","timestamp":"2021-05-13T05:10:46.129Z"}
+{"code":"EENVELOPE","command":"API","level":"error","timestamp":"2021-05-13T05:10:46.907Z"}
+{"code":"EENVELOPE","command":"API","level":"error","timestamp":"2021-05-13T05:10:48.178Z"}
+{"message":"Server is listening localhost: 3000","level":"info","timestamp":"2021-05-13T05:14:26.109Z"}
+{"message":"Successfully connected to the database","level":"info","timestamp":"2021-05-13T05:14:26.175Z"}
+{"message":"login success!","level":"info","timestamp":"2021-05-13T05:14:54.805Z"}
+{"message":"Email sent: 250 2.0.0 OK  1620882903 y190sm1206783pgd.24 - gsmtp","level":"info","timestamp":"2021-05-13T05:15:03.589Z"}
+{"message":"login success!","level":"info","timestamp":"2021-05-13T05:20:22.901Z"}
+{"message":"Email sent: 250 2.0.0 OK  1620883229 oa3sm4451596pjb.1 - gsmtp","level":"info","timestamp":"2021-05-13T05:20:30.395Z"}
+{"message":"Server is listening localhost: 3000","level":"info","timestamp":"2021-05-13T05:36:39.494Z"}
+{"message":"Successfully connected to the database","level":"info","timestamp":"2021-05-13T05:36:39.570Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-13T05:36:39.680Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-13T05:36:39.710Z"}
+{"message":"Server is listening localhost: 3000","level":"info","timestamp":"2021-05-15T14:51:40.118Z"}
+{"message":"Successfully connected to the database","level":"info","timestamp":"2021-05-15T14:51:40.232Z"}
+{"message":"Server is listening localhost: 3000","level":"info","timestamp":"2021-05-16T05:41:50.703Z"}
+{"message":"Successfully connected to the database","level":"info","timestamp":"2021-05-16T05:41:50.842Z"}
+{"message":"Server is listening localhost: 3000","level":"info","timestamp":"2021-05-18T11:13:08.258Z"}
+{"message":"Server is listening localhost: 3000","level":"info","timestamp":"2021-05-18T11:13:41.372Z"}
+{"message":"Server is listening localhost: 3000","level":"info","timestamp":"2021-05-18T11:14:16.470Z"}
+{"message":"Server is listening localhost: 3000","level":"info","timestamp":"2021-05-18T11:14:46.069Z"}
+{"message":"Server is listening localhost: 3000","level":"info","timestamp":"2021-05-18T11:19:28.711Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-18T11:19:28.940Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-18T11:19:29.035Z"}
+{"message":"Server is listening localhost: 3000","level":"info","timestamp":"2021-05-18T11:23:34.351Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-18T11:23:34.463Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-18T11:23:34.497Z"}
+{"message":"Server is listening localhost: 3000","level":"info","timestamp":"2021-05-18T11:24:32.167Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-18T11:24:32.546Z"}
+{"message":"login success!","level":"info","timestamp":"2021-05-18T11:24:32.669Z"}
+{"message":"Email sent: 250 2.0.0 OK  1621337076 j189sm12230917pfd.21 - gsmtp","level":"info","timestamp":"2021-05-18T11:24:35.819Z"}
+{"message":"Server is listening localhost: 3000","level":"info","timestamp":"2021-05-18T11:25:23.049Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-18T11:25:23.262Z"}
+{"message":"login success!","level":"info","timestamp":"2021-05-18T11:25:23.389Z"}
+{"message":"Email sent: 250 2.0.0 OK  1621337127 v8sm12040760pff.220 - gsmtp","level":"info","timestamp":"2021-05-18T11:25:26.292Z"}
+{"message":"Server is listening localhost: 3000","level":"info","timestamp":"2021-05-18T11:27:09.082Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-18T11:27:09.291Z"}
+{"message":"login success!","level":"info","timestamp":"2021-05-18T11:27:09.418Z"}
+{"message":"Email sent: 250 2.0.0 OK  1621337233 i197sm12292490pgc.13 - gsmtp","level":"info","timestamp":"2021-05-18T11:27:12.181Z"}
+{"message":"Server is listening localhost: 3000","level":"info","timestamp":"2021-05-18T11:35:16.598Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-18T11:35:16.795Z"}
+{"message":"login success!","level":"info","timestamp":"2021-05-18T11:35:16.927Z"}
+{"message":"Email sent: 250 2.0.0 OK  1621337720 z19sm2917054pjn.0 - gsmtp","level":"info","timestamp":"2021-05-18T11:35:19.859Z"}
+{"message":"Server is listening localhost: 3000","level":"info","timestamp":"2021-05-18T11:37:43.746Z"}
+{"message":"Server is listening localhost: 3000","level":"info","timestamp":"2021-05-18T11:37:51.796Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-18T11:37:51.978Z"}
+{"message":"login success!","level":"info","timestamp":"2021-05-18T11:37:52.094Z"}
+{"message":"Email sent: 250 2.0.0 OK  1621337876 j26sm12066664pfn.47 - gsmtp","level":"info","timestamp":"2021-05-18T11:37:55.066Z"}
+{"message":"Server is listening localhost: 3000","level":"info","timestamp":"2021-05-18T11:49:15.278Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-18T11:49:15.458Z"}
+{"message":"login success!","level":"info","timestamp":"2021-05-18T11:49:15.593Z"}
+{"message":"Email sent: 250 2.0.0 OK  1621338559 f5sm1847776pjp.37 - gsmtp","level":"info","timestamp":"2021-05-18T11:49:18.850Z"}
+{"message":"Server is listening localhost: 3000","level":"info","timestamp":"2021-05-18T11:49:44.949Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-18T11:49:45.148Z"}
+{"message":"login success!","level":"info","timestamp":"2021-05-18T11:49:45.270Z"}
+{"message":"Email sent: 250 2.0.0 OK  1621338589 d17sm1345624pfq.28 - gsmtp","level":"info","timestamp":"2021-05-18T11:49:48.168Z"}
+{"message":"Server is listening localhost: 3000","level":"info","timestamp":"2021-05-18T11:51:46.280Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-18T11:51:46.478Z"}
+{"message":"login success!","level":"info","timestamp":"2021-05-18T11:51:46.602Z"}
+{"message":"Email sent: 250 2.0.0 OK  1621338710 b12sm9324187pgs.52 - gsmtp","level":"info","timestamp":"2021-05-18T11:51:49.640Z"}
+{"message":"Server is listening localhost: 3000","level":"info","timestamp":"2021-05-18T11:57:05.916Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-18T11:57:06.099Z"}
+{"message":"login success!","level":"info","timestamp":"2021-05-18T11:57:06.218Z"}
+{"message":"Email sent: 250 2.0.0 OK  1621339030 w1sm11104105pjk.10 - gsmtp","level":"info","timestamp":"2021-05-18T11:57:09.257Z"}
+{"message":"Server is listening localhost: 3000","level":"info","timestamp":"2021-05-18T11:58:39.786Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-18T11:58:39.975Z"}
+{"message":"login success!","level":"info","timestamp":"2021-05-18T11:58:40.095Z"}
+{"message":"Email sent: 250 2.0.0 OK  1621339124 c71sm5774592pfc.148 - gsmtp","level":"info","timestamp":"2021-05-18T11:58:42.931Z"}
+{"message":"Server is listening localhost: 3000","level":"info","timestamp":"2021-05-18T12:14:11.132Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-18T12:14:11.347Z"}
+{"message":"login success!","level":"info","timestamp":"2021-05-18T12:14:11.464Z"}
+{"message":"Email sent: 250 2.0.0 OK  1621340055 v18sm12677614pff.90 - gsmtp","level":"info","timestamp":"2021-05-18T12:14:14.754Z"}
+{"message":"Server is listening localhost: 3000","level":"info","timestamp":"2021-05-18T12:16:19.131Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-18T12:16:19.324Z"}
+{"message":"login success!","level":"info","timestamp":"2021-05-18T12:16:19.444Z"}
+{"message":"Email sent: 250 2.0.0 OK  1621340183 f17sm12587935pgi.26 - gsmtp","level":"info","timestamp":"2021-05-18T12:16:22.433Z"}
+{"message":"Server is listening localhost: 3000","level":"info","timestamp":"2021-05-18T12:17:31.426Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-18T12:17:31.612Z"}
+{"message":"login success!","level":"info","timestamp":"2021-05-18T12:17:31.735Z"}
+{"message":"Email sent: 250 2.0.0 OK  1621340255 a24sm12646065pgv.76 - gsmtp","level":"info","timestamp":"2021-05-18T12:17:34.589Z"}
+{"message":"Server is listening localhost: 3000","level":"info","timestamp":"2021-05-18T12:18:05.354Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-18T12:18:05.543Z"}
+{"message":"login success!","level":"info","timestamp":"2021-05-18T12:18:05.665Z"}
+{"message":"Email sent: 250 2.0.0 OK  1621340289 v24sm9150643pfn.101 - gsmtp","level":"info","timestamp":"2021-05-18T12:18:08.589Z"}
+{"message":"Server is listening localhost: 3000","level":"info","timestamp":"2021-05-18T13:55:25.140Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-18T13:55:25.313Z"}
+{"message":"login success!","level":"info","timestamp":"2021-05-18T13:55:25.450Z"}
+{"message":"Email sent: 250 2.0.0 OK  1621346130 187sm12086418pff.139 - gsmtp","level":"info","timestamp":"2021-05-18T13:55:28.895Z"}
+{"message":"Server is listening localhost: 3000","level":"info","timestamp":"2021-05-18T13:59:49.502Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-18T13:59:49.704Z"}
+{"message":"login success!","level":"info","timestamp":"2021-05-18T13:59:49.825Z"}
+{"message":"Email sent: 250 2.0.0 OK  1621346393 o9sm13210770pfh.217 - gsmtp","level":"info","timestamp":"2021-05-18T13:59:52.581Z"}
+{"message":"Server is listening localhost: 3000","level":"info","timestamp":"2021-05-18T14:01:50.629Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-18T14:01:50.799Z"}
+{"message":"login success!","level":"info","timestamp":"2021-05-18T14:01:50.936Z"}
+{"message":"Email sent: 250 2.0.0 OK  1621346515 y190sm13541325pgd.24 - gsmtp","level":"info","timestamp":"2021-05-18T14:01:54.270Z"}
+{"message":"Server is listening localhost: 3000","level":"info","timestamp":"2021-05-18T14:03:00.197Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-18T14:03:00.368Z"}
+{"message":"login success!","level":"info","timestamp":"2021-05-18T14:03:00.506Z"}
+{"message":"Email sent: 250 2.0.0 OK  1621346584 s6sm12983131pgv.48 - gsmtp","level":"info","timestamp":"2021-05-18T14:03:03.380Z"}
+{"message":"Server is listening localhost: 3000","level":"info","timestamp":"2021-05-18T14:04:53.783Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-18T14:04:53.977Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-18T14:04:54.041Z"}
+{"message":"Server is listening localhost: 3000","level":"info","timestamp":"2021-05-18T14:05:10.662Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-18T14:05:10.826Z"}
+{"message":"login success!","level":"info","timestamp":"2021-05-18T14:05:10.965Z"}
+{"message":"Email sent: 250 2.0.0 OK  1621346715 ca6sm2129090pjb.48 - gsmtp","level":"info","timestamp":"2021-05-18T14:05:13.876Z"}
+{"message":"Server is listening localhost: 3000","level":"info","timestamp":"2021-05-18T14:20:46.404Z"}
+{"message":"Server is listening localhost: 3000","level":"info","timestamp":"2021-05-18T14:20:59.933Z"}
+{"message":"Server is listening localhost: 3000","level":"info","timestamp":"2021-05-18T14:21:06.967Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-18T14:21:07.153Z"}
+{"message":"login success!","level":"info","timestamp":"2021-05-18T14:21:07.277Z"}
+{"message":"Email sent: 250 2.0.0 OK  1621347671 n19sm2334317pfa.97 - gsmtp","level":"info","timestamp":"2021-05-18T14:21:10.206Z"}
+{"message":"Server is listening localhost: 3000","level":"info","timestamp":"2021-05-18T14:21:54.773Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-18T14:21:54.933Z"}
+{"message":"login success!","level":"info","timestamp":"2021-05-18T14:21:55.071Z"}
+{"message":"Email sent: 250 2.0.0 OK  1621347719 q9sm2055209pjm.23 - gsmtp","level":"info","timestamp":"2021-05-18T14:21:58.277Z"}
+{"message":"Server is listening localhost: 3000","level":"info","timestamp":"2021-05-18T16:21:33.117Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-18T16:21:33.652Z"}
+{"message":"login success!","level":"info","timestamp":"2021-05-18T16:21:33.825Z"}
+{"message":"Email sent: 250 2.0.0 OK  1621354897 10sm7108714pgl.39 - gsmtp","level":"info","timestamp":"2021-05-18T16:21:36.740Z"}
+{"message":"Server is listening localhost: 3000","level":"info","timestamp":"2021-05-18T16:23:19.323Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-18T16:23:19.547Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-18T16:23:19.608Z"}
+{"message":"Server is listening localhost: 3000","level":"info","timestamp":"2021-05-18T16:24:24.395Z"}
+{"message":"Server is listening localhost: 3000","level":"info","timestamp":"2021-05-18T16:28:13.064Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-18T16:28:13.318Z"}
+{"message":"login success!","level":"info","timestamp":"2021-05-18T16:28:13.547Z"}
+{"message":"Email sent: 250 2.0.0 OK  1621355296 k186sm13068610pgk.82 - gsmtp","level":"info","timestamp":"2021-05-18T16:28:16.406Z"}
+{"message":"Server is listening localhost: 3000","level":"info","timestamp":"2021-05-18T16:30:03.731Z"}
+{"message":"login success!","level":"info","timestamp":"2021-05-18T16:30:04.250Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-18T16:30:04.362Z"}
+{"message":"Email sent: 250 2.0.0 OK  1621355407 f9sm4089800pfc.42 - gsmtp","level":"info","timestamp":"2021-05-18T16:30:07.397Z"}
+{"message":"Server is listening localhost: 3000","level":"info","timestamp":"2021-05-18T16:33:50.463Z"}
+{"message":"login success!","level":"info","timestamp":"2021-05-18T16:33:51.034Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-18T16:33:51.117Z"}
+{"message":"Email sent: 250 2.0.0 OK  1621355639 v6sm4853764pgk.33 - gsmtp","level":"info","timestamp":"2021-05-18T16:33:59.157Z"}
+{"message":"Server is listening localhost: 3000","level":"info","timestamp":"2021-05-18T16:34:31.179Z"}
+{"message":"login success!","level":"info","timestamp":"2021-05-18T16:34:31.785Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-18T16:34:31.965Z"}
+{"message":"Email sent: 250 2.0.0 OK  1621355675 y66sm12967838pgb.14 - gsmtp","level":"info","timestamp":"2021-05-18T16:34:34.700Z"}
+{"message":"Server is listening localhost: 3000","level":"info","timestamp":"2021-05-18T16:35:05.961Z"}
+{"message":"login success!","level":"info","timestamp":"2021-05-18T16:35:06.513Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-18T16:35:06.644Z"}
+{"message":"Email sent: 250 2.0.0 OK  1621355709 i29sm1025940pgn.72 - gsmtp","level":"info","timestamp":"2021-05-18T16:35:09.412Z"}
+{"message":"Server is listening localhost: 3000","level":"info","timestamp":"2021-05-18T16:37:56.036Z"}
+{"message":"Server is listening localhost: 3000","level":"info","timestamp":"2021-05-18T16:39:28.517Z"}
+{"message":"Server is listening localhost: 3000","level":"info","timestamp":"2021-05-18T16:39:58.907Z"}
+{"message":"Server is listening localhost: 3000","level":"info","timestamp":"2021-05-18T16:40:24.739Z"}
+{"message":"login success!","level":"info","timestamp":"2021-05-18T16:40:25.346Z"}
+{"message":"Server is listening localhost: 3000","level":"info","timestamp":"2021-05-18T16:43:24.516Z"}
+{"message":"login success!","level":"info","timestamp":"2021-05-18T16:43:25.212Z"}
+{"message":"Server is listening localhost: 3000","level":"info","timestamp":"2021-05-18T16:43:39.830Z"}
+{"message":"login success!","level":"info","timestamp":"2021-05-18T16:43:40.400Z"}
+{"message":"Server is listening localhost: 3000","level":"info","timestamp":"2021-05-18T16:44:34.010Z"}
+{"message":"login success!","level":"info","timestamp":"2021-05-18T16:44:34.566Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-18T16:44:34.749Z"}
+{"message":"Email sent: 250 2.0.0 OK  1621356278 h21sm2345637pjz.4 - gsmtp","level":"info","timestamp":"2021-05-18T16:44:37.746Z"}
+{"message":"Server is listening localhost: 3000","level":"info","timestamp":"2021-05-18T16:47:32.972Z"}
+{"message":"login success!","level":"info","timestamp":"2021-05-18T16:47:33.576Z"}
+{"message":"Email doesnot exist","level":"error","timestamp":"2021-05-18T16:47:33.715Z"}
+{"message":"Email sent: 250 2.0.0 OK  1621356457 l14sm2321970pji.20 - gsmtp","level":"info","timestamp":"2021-05-18T16:47:36.610Z"}

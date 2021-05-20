@@ -20,7 +20,7 @@ const userSchema = new mongoSchema({
   lastName: { type: String, require: true },
   email: { type: String, lowercase: true, unique: true, require: true },
   password: { type: String, required: true }
-}, { timestamps: true });
+}, { timestamps: true, versionKey: false });
 
 const dbuserschema = mongoose.Schema(userSchema);
 const UserModel = mongoose.model('user', dbuserschema);
@@ -53,8 +53,7 @@ class user {
         })
       }
       else {
-        newUser.save( (err, data) => {
-          console.log("data",data)
+        newUser.save((err, data) => {
           if(data) {
             return res.status(200).send ({ message: "User successfully registered" })
           }else {

@@ -15,6 +15,7 @@
       "EmailMissing": {
         "firstName": "kaushiki",
         "lastName": "a",
+        "email": "",
         "password": "Hello123"
       },
       "loginUser": {

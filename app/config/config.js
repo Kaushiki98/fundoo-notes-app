@@ -1,18 +1,6 @@
-/************************************************************************************
- * @purpose   : For keeping all configurations 
- * 
- * @file      : database.config.js
- * @overview  : contains name and address of database (mongodb).
- * @author    : kaushikiarasavilli@gmail.com
- * @version   : 1.0
- * @since     : 24.04.2021
- * 
- *************************************************************************************/
-
 var blueBird = require('bluebird');
 var mongoose = require('mongoose');
-
-require("dotenv").config();
+require('dotenv').config();
 
 ('use strict');
 
@@ -43,10 +31,6 @@ MongoDBAdapter.prototype.addConnectionListener = function (event, cb) {
   }
 };
 
-/**
- * @description Returns a promise that gets resolved when successfully connected to MongoDB URI
- * @returns {Promise} Returns promise
- */
 MongoDBAdapter.prototype.connect = function () {
   return new blueBird(
     function (resolve, reject) {
@@ -75,10 +59,6 @@ MongoDBAdapter.prototype.connect = function () {
   );
 };
 
-/**
- * @description Returns a promise that gets resolved when successfully disconnected to MongoDB URI
- * @returns {Promise} Returns promise
- */
 MongoDBAdapter.prototype.disconnect = function () {
   return new blueBird(
     function (resolve, reject) {
@@ -107,20 +87,4 @@ MongoDBAdapter.prototype.disconnect = function () {
   );
 };
 
-/**
- * @description createconstructor instance and call connect and disconect method
- */
-let db = new MongoDBAdapter(process.env.DB_URL, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-  useCreateIndex: true,
-  useFindAndModify: false,
-});
-db.connect()
-  .then((uri) => {
-    console.log('Connected to ' + uri);
-  })
-  .catch((uri) => {
-    db.disconnect();
-    console.log('Disconnected from ' + uri);
-  });
+module.exports = MongoDBAdapter;

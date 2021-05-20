@@ -19,13 +19,13 @@ describe('userRegistration', () => {
       });
   });
 
-  it('GivenUserDetails_whenInvalide_shouldNotSaveInDB', (done) => {
+  it('GivenUserDetails_whenDuplicateData_shouldNotSaveInDB', (done) => {
     let userInfo = userDetails.user.InvalideDetails;
     chai.request(server)
       .post('/userRegistration')
       .send(userInfo)
       .end((err, res) => {
-        res.should.have.status(200);
+         res.should.have.status(400);
         done();
       });
   });
@@ -36,7 +36,7 @@ describe('userRegistration', () => {
       .post('/userRegistration')
       .send(userInfo)
       .end((err, res) => {
-        res.should.have.status(200);
+        res.should.have.status(400);
         done();
       });
   });

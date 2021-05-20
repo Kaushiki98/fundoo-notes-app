@@ -18,7 +18,7 @@ const { RegisterValidation, LoginValidation, createToken } = require('../utility
 class userController {
 
   /***********************************************************************************
-  *@description : To handle regester of new user
+  *@description : To handle register of new user
   *@param       : req (request from client)
   *@param       : res (response from server)
   ***********************************************************************************/
@@ -32,22 +32,22 @@ class userController {
     const validation = RegisterValidation.validate(userRegisteration);
 
     if (validation.error) {
-      return res.send({ 
+      return res.status(400).send({ 
         status: 400,
-        message: "Please Enter Valid Details" });
-      
+        message: "Please Enter Valid Details" 
+      });
     }
     else {
       userService.createUser(req, res, (err, result) => {
         if (err) {
           logger.error("Some error occured while registering user");
-          return res.send({
+          return res.status(500).send({
             status: 500,
             message: "error"
           })
         }
         else {
-          return res.send({
+          return res.status(200).send({
             status: 200,
             success: true,
             message: "User registered sucessfully"
@@ -70,7 +70,7 @@ class userController {
     const validation = LoginValidation.validate(userLogin);
 
     if (validation.error) {
-      return res.send({ 
+      return res.status(400).send({ 
         status: 400,
         message: "Please Enter Valid Details" });
     } else {
@@ -90,5 +90,6 @@ class userController {
     userService.forgotPassword(req, res, userLogin)
   }
 }
+
 
 module.exports = new userController()
